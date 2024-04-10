@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { api } from '../api'
-import type { Article, NewArticle } from '../interfaces/article'
+import type { Article, NewArticle } from '@gestionstock/commons'
 
 export const useArticleStore = defineStore('articles', () => {
   const articles = ref<Article[] | undefined>()
