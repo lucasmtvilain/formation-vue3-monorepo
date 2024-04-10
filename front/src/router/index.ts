@@ -24,9 +24,13 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     stockRoute,
+    // {
+    //   path: '/:pathMatch(.*)*',
+    //   redirect: '/'
+    // }
     {
       path: '/:pathMatch(.*)*',
-      redirect: '/'
+      component: () => import('../views/NotFoundView.vue')
     }
   ]
 })
