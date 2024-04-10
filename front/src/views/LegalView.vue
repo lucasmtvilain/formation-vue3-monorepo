@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import MainTitle from '@/components/MainTitle.vue'
+</script>
+
 <template>
   <main>
-    <h1>Mentions Légales</h1>
+    <MainTitle>Slots</MainTitle>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum veritatis in soluta eius
       eligendi a eos corporis itaque voluptates vitae corrupti delectus et, doloremque odit sapiente
