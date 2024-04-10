@@ -6,6 +6,11 @@ import { icon } from './plugins/icon'
 
 import App from './App.vue'
 import router from './router'
+import { isProd } from './stock/utils/misc'
+
+// if (isProd()) {
+//   console.log = () => {}
+// }
 
 const app = createApp(App)
 

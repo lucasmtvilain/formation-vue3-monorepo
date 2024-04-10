@@ -5,7 +5,7 @@ import serveIndex from "serve-index";
 import api from "./api.js";
 const app = express();
 const port = 3000;
-const publicDir = ".";
+const publicDir = "../front/dist";
 
 const log: express.RequestHandler = (
   req,
@@ -25,11 +25,15 @@ app.use(log);
 
 app.use("/api", api);
 app.use(express.static(publicDir));
-app.use(serveIndex(publicDir, { icons: true }));
+//app.use(serveIndex(publicDir, { icons: true }));
 
 // app.get('/', (req, res) => {
 //     res.send('Hello World!')
 // })
+
+app.get("/**", (req, res) => {
+  res.sendFile("index.html", { root: publicDir });
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
