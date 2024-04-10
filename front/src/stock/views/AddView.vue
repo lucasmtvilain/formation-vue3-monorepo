@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router'
 import type { NewArticle } from '@gestionstock/commons'
 import { useArticleStore } from '../store/ArticleStore'
 import { vFocus } from '@/directives/vFocus'
+import MainTitle from '@/components/MainTitle.vue'
 
 const isAdding = ref<boolean>(false)
 const errorMsg = ref<string>('')
@@ -34,7 +35,7 @@ const handleSubmit = async () => {
 
 <template>
   <main>
-    <h1>Ajouter un article</h1>
+    <MainTitle>Ajouter un article</MainTitle>
     <form @submit.prevent="handleSubmit()">
       <label>
         <span>Nom</span>

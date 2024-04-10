@@ -4,6 +4,7 @@ import { useArticleStore } from '../store/ArticleStore'
 import type { Article } from '@gestionstock/commons'
 import { RouterLink } from 'vue-router' // Pour faire fonctionner avec pnpm.
 import { computed, onMounted, ref } from 'vue'
+import MainTitle from '@/components/MainTitle.vue'
 
 const selectedArticles = ref<Set<Article>>(new Set<Article>())
 const errorMsg = ref<string>('')
@@ -60,7 +61,7 @@ const setError = (err: string) => {
 
 <template>
   <main>
-    <h1>Liste des articles</h1>
+    <MainTitle>Liste des articles</MainTitle>
     <div class="content">
       <nav>
         <AsyncButton
