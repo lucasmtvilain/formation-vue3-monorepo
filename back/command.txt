@@ -1,0 +1,107 @@
+npm init -y
+
+>node_modules\.bin\prettier.cmd
+
+
+npm exec prettier --write
+npx prettier --write .
+
+
+npm i eslint -D
+
+npm uninstall eslint
+
+
+npm init @eslint/config-D
+
+hoisting 
+
+// voir echelle de richardson
+
+js voir 
+Object.is
+// privilégier "==" par "==="
+
+"use strict" => en entête de fichier
+permet de supprimer le hoisting pour le fichier.
+
+
+npm i typescript --save-dev
+
+npx tsc server.ts
+
+npm i --save-dev @types/node
+
+
+active excution context => this
+
+
+npx tsc --outDir dist scr/server.ts
+
+
+https://adops.eudonet.com/PRODUITS/Labo/_git/FormationVue3 => projet de jb
+
+npm i nodemon -D
+
+npm i ts-node --save--dev
+
+vscode 
+Ctrl+, => ouvrir parametre
+
+vscode 
+voir setteing.js
+
+volta pin node@lts
+volta pin node@latest
+npm i --save-dev @types/express
+
+https://refactoring.guru/fr
+
+https://github.com/jlg-formation/vjs-example
+
+rimraf 
+
+npm install -g rimraf
+
+rimraf node_modules
+
+volta install pnpm
+pnpm i
+
+volta pin pnpm
+
+https://caniuse.com/
+
+https://github.com/tc39/proposals/blob/main/finished-proposals.md => à lire !!!!
+
+js => this => active excution system
+
+
+npm i sass
+
+npm i normalize
+npm un normalize
+npm i normalize.css
+
+
+Ctrl + / => commente une ligne
+
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+//npm i --save @fortawesome/free-regular-svg-icons
+//npm i --save @fortawesome/free-brands-svg-icons
+npm i --save @fortawesome/vue-fontawesome@latest-3
+
+
+shift + alt + o
+trie les imports
+
+
+Surround => faire les try catch autique
+
+powertoise => verifie quel process bloque un process
+
+  "workspaces":["common","front-common","front","back"],
+  l'ordre déclaration des projet, les derniers projets peuvent dépendre des derniers
+  
+  https://adops.eudonet.com/PRODUITS/Labo/_git/FormationVue3/commits

@@ -1,0 +1,10 @@
+{
+  "name": "@gestionstock/front-commons",
+  "version": "1.0.0",
+  "description": "Composant en commun",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jean-Baptiste Zeller",
+  "private": true
+}
